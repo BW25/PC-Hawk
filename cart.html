@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title> PC Hawk- Cart </title>
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="icon" href="Images/favicon.png">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+<script src=""></script>
+</head>
+
+<body>
+<div class="cartDiv">
+	<br>
+
+	<div class="itemDiv" id="cartStatus">
+		<h2 align="center">Your Shopping Cart is Empty<h2>
+	</div>
+	
+	<div class="checkoutDiv">
+		
+		<p class="cartCheckout" id="shippingInfo">Add just<br>CDN$ 100<br>for free shipping!</p>
+		<p class="cartCheckout"> <font size="2px">(Excludes remote locations)</font></p>
+		<hr>
+		<p class="cartCheckout"><font size="4px">Subtotal:</font></p>
+		<p class="cartCheckout" id="nItems"><font size="2px">(0 Items)</font></p>
+		<p class="cartCheckout" id="cost">CDN$ 0.00</p>
+		
+		<button class="checkoutBtn" onclick="window.location.href = 'checkout.html';">Checkout</button>
+		
+	</div>
+
+
+</div>
+
+</body>
+
+<!-- Create the banner here, to ensure the body has been created -->
+<script src="Javascript/banner.js"></script>
+<script src="Javascript/stickyFooter.js"></script>
+</html>

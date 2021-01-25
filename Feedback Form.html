@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> PC Hawk- Feedback Form </title>
+	<link rel="icon" href="Images/favicon.png">
+	<link rel="stylesheet" href="stylesheet.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="Javascript/Feedback Form.js"></script>
+</head>
+
+
+<body>
+	<div class="container">
+	<h2 class="form_header">Feedback is always welcome!</h2>
+	<form action="feedback success.html" name="feedback" id="feedback">
+
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" id="firstname" placeholder="Jane" maxlength="25"/>
+		<label class="error" for="firstname" id="firstname_empty">This field is required</label>
+		<label class="error" for="firstname" id="firstname_invalid">The name must contain only letters</label>
+		
+	
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" id="lastname" placeholder="Doe" maxlength="25"/>
+		<label class="error" for="lastname" id="lastname_empty">This field is required</label>
+		<label class="error" for="lastname" id="lastname_invalid">The name must contain only letters</label>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" placeholder="jane@doe.com" maxlength="254"/>
+		<label class="error" for="email" id="email_empty">This field is required</label>
+		<label class="error" for="email" id="email_invalid">Invalid email address</label>
+
+		<label for="code">Product Code</label>
+		<input type="text" name="code" id="code" placeholder="A12345" maxlength="25"/>
+		<label class="error" for="code" id="code_empty">This field is required</label>
+		<label class="error" for="code" id="code_invalid">The code must be 6 letters or numbers</label>
+
+		<label for="rating">How would you rate your experience with PC Hawk?</label>
+		<input type="radio" name="rating" id="vGood">
+			<label class="radioLabel">Excellent</label> <br>
+		<input type="radio" name="rating" id="good">
+			<label class="radioLabel">Good</label> <br>
+		<input type="radio" name="rating" id="acceptable">
+			<label class="radioLabel">Acceptable</label> <br>
+		<input type="radio" name="rating" id="unsat">
+			<label class="radioLabel">Unsatisfied</label> <br>
+		<input type="radio" name="rating" id="vUnsat">
+			<label class="radioLabel">Unsatisfied</label> <br> <br>
+			
+		<label for="product">Were you satisfied with the product?</label>
+		<textarea rows="5" maxlength="500" name="product" id="product" Placeholder="Enter text here..." form="feedback"></textarea>
+		
+		<label for="delivery">Were you satisfied with the delivery?</label>
+		<textarea rows="5" maxlength="500" name="deliver" id="delivery" Placeholder="Enter text here..." form="feedback"></textarea>
+		
+		<label for="comments">Comments</label>
+		<textarea  rows="5" maxlength="500" name="comments" id="comments" Placeholder="Enter text here..." form="feedback"></textarea>
+		
+		<button type="submit" class="formSubmit">Register</button>
+
+	</form>
+	</div>
+</body>
+
+<script src="Javascript/banner.js"></script>
+<script src="Javascript/footer.js"></script>
+</html>

@@ -1,0 +1,528 @@
+body {
+	background-color: white;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
+h1 {
+	color: black;
+	text-align:center;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
+h2 {
+	color: black;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
+p {
+	color: black;
+	font-size: 17px;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
+
+/*The container for the slideshow on the main page*/
+.slideShow {
+	position: relative;
+}
+
+/*The image settings for the slideshow on the main page*/
+.slide {
+		
+	width: 100%;	
+	display: block;
+	margin: auto;
+}
+
+/*The previous and next slide buttons for the main page*/
+.prev, .next{
+		cursor:pointer;
+		position:absolute;
+		top: 50%;
+		width: auto;
+		
+		font-weight: bold;
+		font-size: 20px;
+		color: white;
+		user-select: none; /*Prevents the user from highlighting the text*/
+		
+		padding: 25px;		/*Add padding around symbol for button*/
+		margin-top: -40px;	/*Padding shifts down, move back up*/
+		border-radius: 0 5px 5px 0; /*Adds rounded corners*/
+}
+
+/*Places the next slide button on the right*/
+.next{
+	right: 0;
+}
+
+.categoryBackingL, .categoryBackingR {
+	position: relative;
+	border-radius: 5px;
+	background-color: #DDD;
+	width:40%;
+
+
+}
+
+.categoryBackingL{
+	margin-left: 6.6%;
+}
+
+
+/*Controls the spacing for the product category images on the main page*/
+.column{
+	float: left;
+	width:45%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+/*Image for each product category on the main page*/
+.category {
+	width: 100%;
+	border-radius: 10%;
+	cursor: pointer;
+	border: 10px solid cornflowerblue;
+}
+
+
+/*Sample square of the site's grey backing color*/
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #DDD;
+}
+
+/*Sample square of the site's primary color*/
+.primary {
+  height: 50px;
+  width: 50px;
+  background-color: royalblue;
+}
+
+/*Sample square of the site's secondary color*/
+.secondary {
+  height: 50px;
+  width: 50px;
+  background-color: cornflowerblue;
+}
+
+/*Creates a grey backing that stretches the full length of the screen*/
+.backingFull {
+	padding: 5px;
+	background-color: #DDD;
+	position: relative;
+	width: 100%
+}
+
+/*Category page*/
+.productGrid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 10px;
+	padding: 20px;
+}
+.productL {
+	grid-row: 1 / span 2;
+	grid-column: 1/ span 2;
+}
+.productR {
+}
+
+.product2 {
+	float: left;
+	width: 40%;
+	padding: 5%;
+}
+
+.product {
+	float: left;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.productrlaptop {
+	float: left;
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.productly {
+	float: left;
+	width: 50%;
+	padding: 0%;
+}
+
+.product3 {
+	float: right;
+	width: 10%;
+	padding: 0%;
+}
+.product1 {
+	float: right;
+	width: 10%;
+}
+
+/*Product pages*/
+.addtocart{
+	background-color: #FFD700;
+	border-radius:12px ;
+	color: white;
+	padding:14px 40px;
+	text-align: center;
+	font-size: 16px;
+	cursor: round;
+	margin-left: 5%;
+}
+
+.button:hover {
+	background-color: yellow;
+}
+
+.productText {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	padding-left: 5%;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.productHeader {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 22px;
+	padding-left: 5%;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+/*About us*/
+img.profile {
+	position: relative;
+		height: 100px;
+		left: 40%;
+}
+
+/*Info page*/
+.displayTab {
+	display: block;
+}
+.hideTab {
+	display: none;
+}
+
+
+
+/*Banner*/
+.banner {
+	background-color: royalblue;
+	overflow: hidden;
+}
+
+a.bannerText {
+	float: left;
+	text-align: center;
+	width: 10%;
+	padding: 14px 5%;
+	
+	color: white;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.banner a.bannerText:hover{
+	text-decoration: underline;
+	background-color: cornflowerblue;
+}
+
+.logoLink {
+	float: left;
+	width: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+img.bannerLogo {
+	width: 60px;
+	height: 60px;
+}
+
+.searchContainer {
+	float: left;
+	width: 65%;
+	height: 100%;
+}
+
+form.bannerForm {
+	padding: 0px;
+}
+
+input.bannerSearch {
+	float: left;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-size: 16px;
+	padding: 5px;
+	width: 75%;
+	margin-bottom: 0px;
+	height: auto;
+}
+
+.bannerButton {
+	float: left;
+	background-color: cornflowerblue;
+	padding: 2.5px;
+	width: 20%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: auto;
+	border: 1px solid #aaa;
+}
+
+/*Footer*/
+.marginFooter {
+	margin-top: 17%;
+	background-color: royalblue;
+	overflow: hidden;
+}
+
+.footer {
+	background-color: royalblue;
+	overflow: hidden;
+}
+
+.stickyFooter {
+	background-color: royalblue;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0px;
+}
+
+.footerText {
+	float: left;
+	text-align: left;
+	width: 100%;
+	padding: 3px 5%;
+	
+	color: white;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+a.footerLink {
+	float: left;
+	text-align: center;
+	width: 100%;
+	padding: 11px;
+	
+	color: white;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+}
+.footer a.footerLink:hover{
+	text-decoration: underline;
+	background-color: cornflowerblue;
+}
+
+.stickyFooter a.footerLink:hover{
+	text-decoration: underline;
+	background-color: cornflowerblue;
+}
+
+.footerCol{
+	float: left;
+	width:30%;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+}
+
+img.footerLogo {
+	width: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+
+img.flag {
+	width: 65px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+}
+
+
+/*success pages*/
+.success {
+	width: 100%;
+	top: 50%;
+	text-align:center;
+}
+
+.backingSuccess {
+	padding: 10px;
+	background-color: #DDD;
+	position: absolute;
+	width: 50%;
+	top: 35%;
+	left: 25%;
+}
+
+.successLogo {
+	width: 150px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+
+/* Form style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 25px auto;
+}
+
+.form_header {
+	color: black;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-size: 25px;
+	padding-left: 20px;
+}
+
+/*Cart*/
+.cartDiv {
+	
+}
+.itemDiv {
+	float: left;
+	width: calc(100% - 175px);
+}
+.checkoutDiv{
+	position: relative;
+	float: right;
+	right: 25px;
+	width: 150px;
+	border: 1.5px solid cornflowerblue;
+	border-radius: 5px;
+}
+p.cartCheckout{
+	margin: 5px;
+	text-align: center;
+}
+button.checkoutBtn {
+	position: relative;
+	border-radius: 3px;
+	width: 101%;
+	height: 30px;
+	border: none;
+	background: cornflowerblue;
+	color: #fff;
+	margin-top: 10px;
+	cursor: pointer;
+	font-size: 17px;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
+form {
+  padding: 20px;
+  color: black;
+  font-size: 17px;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+form label,
+form input,
+form button {
+  border: 0;
+  margin-bottom: 5px;
+  display: block;
+  width: 100%;
+}
+form input {
+  height: 25px;
+  line-height: 25px;
+  background: #fff;
+  color: #000;
+  padding: 0 6px;
+  border: 1px solid #aaa;
+  margin-bottom: 15px;
+  outline: 2px hidden cornflowerblue;
+}
+form button {
+  height: 30px;
+  line-height: 30px;
+  background: royalblue;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+.radioContain {
+	border: 1px solid #aaa;
+}
+.radioLabel {
+	position: relative;
+	display: inline;
+	padding-left: 5px;
+	top: -4px;
+	font-size: 15px;
+}
+input[type=radio] {
+	height: 15px;
+	width: 15px;
+	margin-bottom: 10px;
+	outline: none;
+	display: inline;
+	vertical-align: middle;
+}
+form select {
+  height: 30px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+	
+form .error {
+  color: #ff0000;
+  margin-bottom:15px;
+}
+form .phpError {    /*Used by php validation that should be unaffected by JS*/
+    color: #ff0000;
+    margin-bottom:15px;
+}
+
+.loginFailed{
+  color: #ff0000;
+  margin-bottom:15px;
+}
+
+textarea {
+		resize: none;
+		border: 1px solid #aaa;
+		margin-bottom: 15px;
+		padding: 0 6px;
+		font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+		outline: 2px hidden cornflowerblue;
+		width: 100%;
+		 font-size: 15px;
+		font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
+
+.adminTable,.adminEntry {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.adminTable {
+    width: 100%;
+}
+

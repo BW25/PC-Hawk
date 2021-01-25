@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title> PC Hawk- Home </title>
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="icon" href="Images/favicon.png">
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+<script src="Javascript/home.js"></script>
+</head>
+
+<!--Images from www.pexels.com
+https://www.pexels.com/photo/coding-computer-data-depth-of-field-577585/
+https://www.pexels.com/photo/office-working-app-computer-97077/
+https://www.pexels.com/photo/turned-on-computer-monitor-on-table-1532621/
+https://www.pexels.com/photo/chair-computer-furniture-indoors-373883/
+https://www.pexels.com/photo/apple-business-computer-connection-392018/
+
+https://www.pexels.com/photo/computer-desk-electronics-indoors-374074/
+
+https://www.pexels.com/photo/business-computer-connection-contemporary-450035/
+
+https://pixabay.com/en/canada-flag-canadian-symbol-27003/
+
+
+Slideshow tips
+https://www.w3schools.com/howto/howto_js_slideshow.asp
+
+Side-by-side image tutorial
+https://www.w3schools.com/howto/howto_css_images_side_by_side.asp
+
+Banner tutorial
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav
+-->
+
+<body>
+
+<div class="slideShow">
+
+	<img id='activeImg' class="slide" src=Images/armchair-business-computer-1532621.jpg alt="Slide Image">
+
+	<a class="prev" onclick="changeSlide(-1)"> &#10094; </a>
+	<a class="next" onclick="changeSlide(+1)"> &#10095; </a>
+</div>
+<br>
+<div >
+	<h1>Welcome to PC Hawk!</h1>
+	<p padding="10px" align="center">Whether it's for business or pleasure, PC Hawk has all the latest laptops and accessories.</p>
+	<br>
+</div>
+
+<div class="column"> 
+	<h2 align=center>Laptops</h2>
+	<img class="category" src=Images/computer-desk-electronics-374074.jpg alt="Laptops" onclick="window.location.href='Laptops.html'"> </img>
+</div>
+<div class="column"> 
+	<h2 align=center text-decoration="none" >Accessories</h2>
+	<img class="category" src=Images/apple-business-click-392018.jpg alt="Accessories" onclick="window.location.href='acs.html'"> </img>
+</div>
+
+<p> &nbsp </p>
+
+</body>
+
+<!-- Create the banner here, to ensure the body has been created -->
+<script src="/PC_Hawk/Javascript/banner.js"></script>
+<script src="/PC_Hawk/Javascript/footer.js"></script>
+</html>

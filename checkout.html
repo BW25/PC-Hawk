@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title> PC Hawk- Checkout </title>
+	<link rel="icon" href="Images/favicon.png">
+	<link rel="stylesheet" href="stylesheet.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+</head>
+
+
+<body>
+	<div class="container">
+	<h2 class="form_header">Enter a shipping address</h2>
+	<form action="checkout success.html" name="feedback" id="feedback">
+
+		<label for="fullname">Full Name</label>
+		<input type="text" name="fullname" id="fullname" placeholder="Jane Doe" maxlength="50"/>
+		<label class="error" for="firstname" id="fullname_empty">This field is required</label>
+		<label class="error" for="firstname" id="fullname_invalid">The name must contain only letters</label>
+		
+	
+		<label for="address1">Address Line 1</label>
+		<input type="text" name="address1" id="address1" placeholder="Street address, P.O. box, company name, c/0" maxlength="50"/>
+		<label class="error" for="address1" id="address1_empty">This field is required</label>
+
+		<label for="address2">Address Line 2</label>
+		<input type="text" name="address2" id="address2" placeholder="Apartment, suite, unit, building, floor, etc." maxlength="50"/>
+
+		<label for="city">City</label>
+		<input type="text" name="city" id="city" maxlength="25"/>
+		<label class="error" for="city" id="city_empty">This field is required</label>
+		
+		<label for="province">Province</label>
+		<select name="province" id="province">
+		<option value="N/A">Select a province</option>
+		<option value="ON">Ontario</option>
+		<option value="QC">Quebec</option>
+		<option value="BC">British Columbia</option>
+		<option value="AB">Alberta</option>
+		<option value="MB">Manitoba</option>
+		<option value="SK">Saskatchewan</option>
+		<option value="NS">Nova Scotia</option>
+		<option value="NB">New Brunswick</option>
+		<option value="NL">Newfoundland and Labrador</option>
+		<option value="PE">Prince Edward Island</option>
+		<option value="NT">Northwest Territories</option>
+		<option value="NU">Nunavut</option>
+		<option value="YT">Yukon</option>
+		</select>
+		<label class="error" for="province" id="province_empty">This field is required</label>
+		
+		
+		<label for="postal">Postal Code</label>
+		<input type="text" name="postal" id="postal" placeholder="A1A1A1" maxlength="6"/>
+		<label class="error" for="postal" id="postal_empty">This field is required</label>
+		<label class="error" for="postal" id="postal_invalid">Invalid code format (A1A1A1)</label>
+		
+		<label for="phone">Phone Number</label>
+		<input type="text" name="phone" id="phone" placeholder="555-555-5555" maxlength="12"/>
+		<label class="error" for="phone" id="phone_empty">This field is required</label>
+		<label class="error" for="phone" id="phone_invalid">Invalid number (555-555-5555)</label>
+
+		<hr><br>
+		<h2>Enter Credit Card Information</h2>
+		<br>
+		
+		<label for="cardName">Name on Card</label>
+		<input type="text" name="cardName" id="cardName" placeholder="Jane Doe" maxlength="50"/>
+		<label class="error" for="cardName" id="cardName_empty">This field is required</label>
+		<label class="error" for="cardName" id="cardName_invalid">The name must contain only letters</label>
+
+		<label for="cardNum">Card Number</label>
+		<input type="text" name="cardNum" id="cardNum" placeholder="" maxlength="50"/>
+		<label class="error" for="cardNum" id="cardNum_empty">This field is required</label>
+		<label class="error" for="cardNum" id="cardNum_invalid">16 digit card number required</label>
+
+		<label for="cardExpire">Expiration Date</label>
+		<select name="expMonth">
+		<option value="01">01</option>
+		<option value="02">02</option>
+		<option value="03">03</option>
+		<option value="04">04</option>
+		<option value="05">05</option>
+		<option value="06">06</option>
+		<option value="07">07</option>
+		<option value="08">08</option>
+		<option value="09">09</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		</select>
+		
+		<select name="cardYear">
+		<option value="2019">2019</option>
+		<option value="2020">2020</option>
+		<option value="2021">2021</option>
+		<option value="2022">2022</option>
+		<option value="2023">2023</option>
+		<option value="2024">2024</option>
+		<option value="2025">2025</option>
+		<option value="2026">2026</option>
+		<option value="2027">2027</option>
+		<option value="2028">2028</option>
+		<option value="2029">2029</option>
+		</select><br><br>
+
+		<button type="submit" class="formSubmit">Submit</button>
+
+	</form>
+	</div>
+</body>
+
+<script src="/PC_Hawk/Javascript/banner.js"></script>
+<script src="/PC_Hawk/Javascript/footer.js"></script>
+</html>
